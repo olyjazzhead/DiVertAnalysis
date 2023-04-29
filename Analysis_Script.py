@@ -23,6 +23,8 @@ from distributed import Client
 import mplhep as hep
 import matplotlib.pyplot as plt
 
+from files import *
+
 
 #Define useful quantities
 
@@ -95,7 +97,12 @@ class MyProcessor(processor.ProcessorABC):
 
     def process(self, events):
 
-    	myVars=[]
+    	myVars=[
+    			"MSVtx_nMDT"
+    			"MSVtx_nRPC"
+    			"MSVtx_nTGC"
+    			"MSVtx_eta"
+    			"jet_pT"]
     	#### FILL IN VARIABLES OF INTEREST LATER ####
 
     	# Initialize arrays, if needed 
@@ -107,6 +114,7 @@ class MyProcessor(processor.ProcessorABC):
         # Define our relevant objects from the schema
         trig = events.trigPassed
         prim_vertex = events.PrimVertex
+
         #### FILL IN VARIABLES OF INTEREST LATER ####
 
         
@@ -120,12 +128,20 @@ class MyProcessor(processor.ProcessorABC):
         #We only want events that pass trigger and have good PV #### LATER ADD EVENTS THAT SATISFY OTHER CRITERIA ####
         good_events = (passTrigger & passPrimVertex)
 
+
+
         return{#### RETURN ALL EVENTS THAT PASS TRIGGER AND HAVE GOOD PV
         }
 
     def postprocess(self, accumulator):
     	return accumulator
 
+
+
+
+
+
+######Simpler Version
 
 
 

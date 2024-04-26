@@ -8,7 +8,7 @@ The data used for this model is not included in the repository due to it's size.
 
 The ntuple maker used is referenced on the DiVertAnalysis Gitlab page: https://gitlab.cern.ch/atlas-phys-exotics-llp-mscrid/fullrun2analysis/DiVertAnalysisR21/
 
-To use run this model, first import your signal file into the Signal Training Set (Either Barrel or Endcap depending on which region of the MS Spectromoeter you are running. The background data will be run from the Background Training Set (The files will likely have to be concatenated since this seems to be how lxplus deals with these sorts of data).
+To use run this model, first import your signal file into the Training Signal (Either Barrel or Endcap depending on which region of the MS Spectromoeter you are running). The background data will be run from the Training Background (The files will likely have to be concatenated since this seems to be how lxplus deals with these sorts of data).
 
 These Training Sets will output either sig_train_barrel.csv, sig_train_endcap.csv, or bkg_train.csv
 

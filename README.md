@@ -4,7 +4,7 @@
 This package is used to search for Long Lived Particles decaying in the Muon Spectrometer in the ATLAS experiment at CERN. These scripts are designed to input signal and background data and feed it through a Boosted Decision Tree (XGBoost) which hope to achieve a better efficiency than the manual cutflow (also provided in the repository). As of 4/25/2024, the model is still in development.
 
 
-The data used for this model is not included in the repository due it's size. 
+The data used for this model is not included in the repository due to it's size. 
 
 The ntuple maker used is referenced on the DiVertAnalysis Gitlab page: https://gitlab.cern.ch/atlas-phys-exotics-llp-mscrid/fullrun2analysis/DiVertAnalysisR21/
 

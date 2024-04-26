@@ -1,1 +1,0 @@
-Folder containing all data. The signal file is the single file with long name. The background files are contained in bkg_files folder and must be concatenated in the script. This is all done for you in the script.
